@@ -22,41 +22,41 @@ function codifica(texto) {
 }
 
 function decodifica(texto) {
-    var codigo = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]];
+    let code = [["a", "ai"], ["e", "enter"], ["i", "imes"], ["o", "ober"], ["u", "ufat"]];
     texto = texto.value;
 
-    for(var i = 0; i < codigo.length; i++) {
-        if(texto.includes(codigo[i][1])) {
-            texto = texto.replaceAll(codigo[i][1], codigo[i][0]);
+    for(let i = 0; i < code.length; i++) {
+        if(texto.includes(code[i][1])) {
+            texto = texto.replaceAll(code[i][1], code[i][0]);
         }
     }
     return texto;
 }
 
 function escreveCodificado() {
-    var btnCopiar = document.querySelector(".btn-copiar");
-    btnCopiar.classList.remove("invisivel");
+    let btnCopia = document.querySelector(".btn-copiar");
+    btnCopia.classList.remove("invisivel");
     
     resultado.textContent = codifica(inputTexto);
 }
 
 function escreveDecodificado() {
-    var btnCopiar = document.querySelector(".btn-copiar");
-    btnCopiar.classList.remove("invisivel");
+    let btnCopia = document.querySelector(".btn-copiar");
+    btnCopia.classList.remove("invisivel");
 
     resultado.textContent = decodifica(inputTexto);
 }
 
-var inputTexto = document.querySelector(".input-texto");
-var resultado = document.querySelector(".resultado");
+let inputTexto = document.querySelector(".input-texto");
+let resultado = document.querySelector(".resultado");
 
-var btnCodificar = document.querySelector(".btn-codificar");
-var btnDecodificar = document.querySelector(".btn-decodificar");
+let btnCodificar = document.querySelector(".btn-codificar");
+let btnDecodificar = document.querySelector(".btn-decodificar");
 
-var mensagensErro = document.querySelector(".mensagens-erro");
+let mensagensErro = document.querySelector(".mensagens-erro");
 
 btnCodificar.onclick = function() {
-    var erros = validaTexto(inputTexto);
+    let erros = validaTexto(inputTexto);
 
     if(erros.length > 0) {
         mostraErros(erros);
@@ -69,7 +69,7 @@ btnCodificar.onclick = function() {
 }
 
 btnDecodificar.onclick = function() {
-    var erros = validaTexto(inputTexto);
+    let erros = validaTexto(inputTexto);
 
     if(erros.length > 0) {
         mostraErros(erros);

@@ -1,19 +1,19 @@
 function validaTexto(texto) {
-    var erros = [];
+    let erros = [];
 
-    if(texto.value == 0) erros.push(" Digite algum texto!");
+    if(texto.value == 0) erros.push(" Digite um texto!");
 
-    if(/[A-Z-À-Ú-à-ú]/.test(texto.value)) erros.push(" Apenas letras minúsculas e sem acento!");
+    if(/[A-Z-À-Ú-à-ú]/.test(texto.value)) erros.push(" Somente letras minúsculas e sem acento!");
 
     return erros;
 }
 
 function mostraErros(erros) {
-    var ul = document.querySelector(".mensagens-erro");
+    let ul = document.querySelector(".mensagens-erro");
     ul.innerHTML = "";
 
     erros.forEach(function(erro) {
-        var li = document.createElement("li");
+        let li = document.createElement("li");
         li.textContent = erro;
         ul.appendChild(li);
     });
