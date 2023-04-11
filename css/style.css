@@ -1,3 +1,5 @@
+/* desenvolvido por Diego */
+
 *, footer {
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
@@ -5,7 +7,9 @@
     line-height: 1.5;
 }
 body {
-    background: linear-gradient(#eff1fa, #e9ecf8, #609ed4);
+    background: linear-gradient(#e6e6e6, #acb1c5, #0f68b6);
+    
+   
 }
 header {
     display: flex;
@@ -22,13 +26,14 @@ h1:hover {
 }
 textarea {
     resize: none;
+    height: 350px;
 }
 .input-texto {
     margin-top: 85px;
     margin-left: 15px;
     background-color: transparent;
     border-color: transparent;
-    border-radius: 30px;
+    border-radius: 20px;
     padding: 0.5rem;
 }
 .informacao {
@@ -51,12 +56,13 @@ textarea {
     margin-left: 15px;
 }
 button {
-    width: 325px;
-    height: 60px;
+    width: 300px;
+    height: 55px;
     border: 1px solid #0a3871;
-    border-radius: 25px;
+    border-radius: 10px;
     cursor: pointer;
     box-shadow: 3px 5px 12px #356ea9;
+    font-size: 1.5rem;
 }
 button:hover {
     transition: 0.5s;
@@ -77,15 +83,17 @@ button:hover {
     margin: 20px 0;
     border-radius: 30px;
     padding: 2rem;
-    height: 40rem;
+    height: 31rem;
     text-align: center;
     box-shadow: 12px 18px 35px #356ea9;
+    
 }
 .resultado {
     position: relative;
     border-color: transparent;
     border-radius: 30px;
     padding: 0.5rem;
+    
 }
 .resultado:placeholder-shown {
     background-image: url(../img/resultado-bg.png);
@@ -104,12 +112,12 @@ button:hover {
 }
 footer {
     text-align: center;
-    margin-top: 9rem;
-    margin-bottom: 3rem;
+    margin-top: 6rem;
+    margin-bottom: 2.7rem;
 }
 .redes {
     display: inline;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
     color: white;
 }
@@ -130,7 +138,7 @@ footer {
     color: #0a3871;
 }
 .credito {
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     color: white;
     margin-top: 15px;
